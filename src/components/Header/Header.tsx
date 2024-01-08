@@ -1,6 +1,8 @@
 const Header = () => {
   return (
-    <div>Header</div>
+    <div>
+      Dio Banck
+    </div>
   )
 }
 
