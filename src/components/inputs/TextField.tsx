@@ -16,11 +16,11 @@ export const TextField = ({
     label,
     type = 'text',
     placeholder,
-    className="pl-2 pr-2 font-normal border-2 border-gray-300 rounded-md focus:border-blue-500 focus:outline-none",
+    className = 'px-2 h-8 font-normal border-2 border-gray-300 rounded-md focus:border-blue-500 focus:outline-none',
     children
 }: ITextField) => {
     return (
-        <div className="mb-5 flex flex-col relative">
+        <div className="flex flex-col gap-1 relative">
             <label htmlFor={id} className="ml-1">
                 {label}
             </label>

@@ -15,8 +15,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
-    </html>
-  )
+      <html lang="pt-br">
+          <head>
+              <link
+                  rel="icon"
+                  href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%23ffffff'%3E%3Ccircle cx='50' cy='50' r='50'/%3E%3Ctext x='50' y='60' font-size='60' text-anchor='middle' alignment-baseline='middle'%3E🌀%3C/text%3E%3C/svg%3E"
+                  type="icon"
+              />
+          </head>
+          <body className={inter.className}>{children}</body>
+      </html>
+  );
 }
