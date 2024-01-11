@@ -30,7 +30,8 @@ export const PassWord = ({
             placeholder={
                 showPassword ? placeholder : '•'.repeat(placeholder.length)
             }
-            className="pl-2 pr-10 h-8 font-normal border-2 border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"
+            className="pl-2 pr-10 h-10 font-normal border-2 text-white bg-zinc-700 border-zinc-500 rounded-md focus:border-green-500 focus:outline-none"
+            // 'px-2 h-10 font-normal border-2 text-white bg-zinc-700 border-zinc-500 rounded-md focus:border-green-500 focus:outline-none'
         >
             <button
                 type="button"

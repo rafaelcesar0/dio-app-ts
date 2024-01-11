@@ -16,14 +16,14 @@ const FormLogin = () => {
         <>
             <form
                 onSubmit={handleSubmit(createUser)}
-                className="flex flex-col gap-8 bg-white p-5 rounded-3xl min-w-96 mt-20 h-min text-1xl"
+                className="flex flex-col gap-8 px-16 rounded-3xl w-full text-1xl"
             >
-                <h1 className="flex justify-center text-3xl font-extrabold">
+                <h1 className="text-white flex justify-center text-3xl font-extrabold">
                     Faça o login
                 </h1>
                 <TextField
                     id="inputEmail"
-                    label="Email"
+                    label="E-mail"
                     type="email"
                     placeholder="joão@gmail.com"
                 />
@@ -32,13 +32,13 @@ const FormLogin = () => {
 
                 <button
                     type="submit"
-                    className="bg-blue-400 px-3 py-1 mt-4 rounded flex transition duration-300 mx-auto hover:bg-blue-500 text-lg text-white "
+                    className="bg-green-600 px-3 py-1 rounded flex justify-center transition duration-300 hover:bg-green-500 text-lg text-white "
                 >
-                    CONTINUAR
+                    Salvar
                 </button>
             </form>
 
-            <pre>output</pre>
+            <pre>{output}</pre>
         </>
     );
 };
