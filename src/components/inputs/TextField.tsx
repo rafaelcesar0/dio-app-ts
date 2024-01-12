@@ -1,22 +1,23 @@
 import { ReactNode } from 'react';
+import { UseFormRegister } from 'react-hook-form';
 
 interface ITextField {
     id: string;
-    name?: string;
     label?: string;
     type?: string;
     className?: string;
     placeholder?: string;
+    register: UseFormRegister<any>;
     children?: ReactNode;
 }
 
 export const TextField = ({
     id,
-    name = id,
     label,
     type = 'text',
     placeholder,
     className = 'px-2 h-10 font-normal border-2 text-white bg-zinc-700 border-zinc-500 rounded-md focus:border-green-500 focus:outline-none autofill:focus',
+    register,
     children
 }: ITextField) => {
     return (
@@ -27,10 +28,10 @@ export const TextField = ({
             <input
                 type={type}
                 id={id}
-                name={name}
                 placeholder={placeholder}
                 className={className}
                 autoComplete='off'
+                {...register(id)}
             />
             {children}
         </div>

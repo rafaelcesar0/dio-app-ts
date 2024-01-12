@@ -1,21 +1,25 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import { UseFormRegister } from 'react-hook-form';
 import { TextField } from './TextField';
+
 
 interface IPassWord {
     id: string;
-    name?: string;
     label?: string;
     placeholder?: string;
+    register: UseFormRegister<any>;
 }
 
 export const PassWord = ({
     id,
-    name = id,
     label = 'Senha',
-    placeholder = 'Minha senha'
+    placeholder = 'Minha senha',
+    register
+
 }: IPassWord) => {
-    const [showPassword, setShowPassword]: [boolean, Function] =
-        useState(false);
+    const ref = useRef<HTMLInputElement>(null);
+
+    const [showPassword, setShowPassword]: [boolean, Function] = useState(false);
 
     const togglePasswordVisibility = () => {
         setShowPassword((prevShowPassword: boolean) => !prevShowPassword);
@@ -24,14 +28,13 @@ export const PassWord = ({
     return (
         <TextField
             id={id}
-            name={name}
             label={label}
             type={showPassword ? 'text' : 'password'}
             placeholder={
                 showPassword ? placeholder : '•'.repeat(placeholder.length)
             }
             className="pl-2 pr-10 h-10 font-normal border-2 text-white bg-zinc-700 border-zinc-500 rounded-md focus:border-green-500 focus:outline-none"
-            // 'px-2 h-10 font-normal border-2 text-white bg-zinc-700 border-zinc-500 rounded-md focus:border-green-500 focus:outline-none'
+            register={register}
         >
             <button
                 type="button"

@@ -22,13 +22,14 @@ const FormLogin = () => {
                     Faça o login
                 </h1>
                 <TextField
-                    id="inputEmail"
+                    id="email"
                     label="E-mail"
                     type="email"
                     placeholder="joão@gmail.com"
+                    register={register}
                 />
 
-                <PassWord id="inputSenha" />
+                <PassWord id="senha" register={register} />
 
                 <button
                     type="submit"
