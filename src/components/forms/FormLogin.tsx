@@ -16,7 +16,7 @@ const FormLogin = () => {
         <>
             <form
                 onSubmit={handleSubmit(createUser)}
-                className="flex flex-col gap-8 px-16 w-xl rounded-3xl text-1xl"
+                className="flex flex-col gap-8 px-16 w-full max-w-xl rounded-3xl text-1xl"
             >
                 <h1 className="text-white flex justify-center text-3xl font-extrabold">
                     Faça o login
@@ -38,7 +38,7 @@ const FormLogin = () => {
                 </button>
             </form>
 
-            <pre>{output}</pre>
+            <pre className='text-white'>{output}</pre>
         </>
     );
 };
