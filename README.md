@@ -13,13 +13,13 @@
         <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
     </a>&nbsp;
     <a href="https://tailwindcss.com/">
-        <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white">
+        <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
     </a>&nbsp;
     <a href="https://react-hook-form.com/">
-        <img src="https://img.shields.io/badge/React%20Hook%20Form-%23EC5990?style=for-the-badge&logo=React%20Hook%20Form&logoColor=white">
+        <img src="https://img.shields.io/badge/React%20Hook%20Form-%23EC5990?style=for-the-badge&logo=React%20Hook%20Form&logoColor=white"/>
     </a>&nbsp;
     <a href="https://zod.dev/">
-        <img src="https://img.shields.io/badge/Zod-%23274D82?style=for-the-badge&logo=Zod&logoColor=white">
+        <img src="https://img.shields.io/badge/Zod-%23274D82?style=for-the-badge&logo=Zod&logoColor=white"/>
     </a>&nbsp;
 </div>
 
