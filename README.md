@@ -1,28 +1,13 @@
 ## Technologies used in the project
-<div className="flex flex-grow w-full">
-    <a href="https://nextjs.org/">
-        <img src="https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
-    </a>
-    <a href="https://react.dev/">
-        <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-    </a>
-    <a href="https://nodejs.org/en">
-        <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
-    </a>
-    <a href="https://www.typescriptlang.org/">
-        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
-    </a>
-    <a href="https://tailwindcss.com/">
-        <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white">
-    </a>
-    <a href="https://react-hook-form.com/">
-        <img src="https://img.shields.io/badge/React%20Hook%20Form-%23EC5990?style=for-the-badge&logo=React%20Hook%20Form&logoColor=white">
-    </a>
-    <a href="https://zod.dev/">
-        <img src="https://img.shields.io/badge/Zod-%23274D82?style=for-the-badge&logo=Zod&logoColor=white">
-    </a>
-</div>
-
+![Next](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)&nbsp;
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
+![NodeJS](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)&nbsp;
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)&nbsp;
+![TailWind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)&nbsp;
+![React-Hook-Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990?style=for-the-badge&logo=React%20Hook%20Form&logoColor=white
+)&nbsp;
+![Zod](https://img.shields.io/badge/Zod-%23274D82?style=for-the-badge&logo=Zod&logoColor=white
+)&nbsp;
 
 ## Getting Started
 
