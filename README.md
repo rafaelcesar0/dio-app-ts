@@ -12,6 +12,8 @@
 First, clone this repository:
 ```bash
 git clone https://github.com/rafaelcesar0/page-login-validation.git
+
+cd ./page-login-validation
 ```
 
 Second, install the `packages` used in the project:
