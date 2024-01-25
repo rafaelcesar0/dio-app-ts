@@ -3,70 +3,72 @@ import { useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { PassWord } from '../inputs/PassWord';
 import { TextField } from '../inputs/TextField';
-import { CreateUserFormData, createUserFormSchema } from '@/validation/formLogin';
+import {
+  CreateUserFormData,
+  createUserFormSchema,
+} from '@/validation/formLogin';
 import { JetBrains_Mono } from 'next/font/google';
-const jet = JetBrains_Mono({ subsets: ['latin'] })
-
+const jet = JetBrains_Mono({ subsets: ['latin'] });
 
 /**
  * To-do
- * 
+ *
  * [x] Validação / transformação
  * [ ] Field Arrays
- * [ ] Upload de arquivos 
+ * [ ] Upload de arquivos
  * [ ] Composition Pattern
  */
 
 const FormLogin = () => {
-    const [output, setOutput] = useState('');
-    
-    const form = useForm<CreateUserFormData>({
-        resolver: zodResolver(createUserFormSchema)
-    });
+  const [output, setOutput] = useState('');
 
-    function createUser(data: any) {
-        setOutput(JSON.stringify(data, null, 2));
-    }
+  const form = useForm<CreateUserFormData>({
+    resolver: zodResolver(createUserFormSchema),
+  });
 
-    return (
-        <>
-            <form
-                onSubmit={form.handleSubmit(createUser)}
-                className="flex flex-col gap-8 px-16 w-full max-w-xl rounded-3xl text-1xl"
-            >
-                <h1 className="text-white flex justify-center text-3xl font-extrabold">
-                    Faça o login
-                </h1>
-                <TextField
-                    id="name"
-                    label="Nome"
-                    type="text"
-                    placeholder="João Paulo"
-                    form={form}
-                />
+  function createUser(data: any) {
+    setOutput(JSON.stringify(data, null, 2));
+  }
 
-                <TextField
-                    id="email"
-                    label="E-mail"
-                    type="email"
-                    placeholder="joão@gmail.com"
-                    form={form}
-                />
+  return (
+    <>
+      <form
+        onSubmit={form.handleSubmit(createUser)}
+        className='flex flex-col gap-8 px-16 w-full max-w-xl rounded-3xl text-1xl'
+      >
+        <h1 className='text-white flex justify-center text-3xl font-extrabold'>
+          Faça o login
+        </h1>
+        <TextField
+          id='name'
+          label='Nome'
+          type='text'
+          placeholder='João Paulo'
+          form={form}
+        />
 
-                <PassWord id="senha" form={form} />
+        <TextField
+          id='email'
+          label='E-mail'
+          type='email'
+          placeholder='joão@gmail.com'
+          form={form}
+        />
 
-                <button
-                    type="submit"
-                    className="bg-green-600 px-3 py-1 rounded flex justify-center transition duration-300
-                     hover:bg-green-500 text-lg text-white "
-                >
-                    Salvar
-                </button>
-            </form>
+        <PassWord id='senha' form={form} />
 
-            <pre className={`text-white ${jet.className}`}>{output}</pre>
-        </>
-    );
+        <button
+          type='submit'
+          className='bg-green-600 px-3 py-1 rounded flex justify-center transition duration-300
+                     hover:bg-green-500 text-lg text-white '
+        >
+          Salvar
+        </button>
+      </form>
+
+      <pre className={`text-white ${jet.className}`}>{output}</pre>
+    </>
+  );
 };
 
 export default FormLogin;
