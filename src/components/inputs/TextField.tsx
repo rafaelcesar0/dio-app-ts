@@ -6,10 +6,10 @@ interface ITextField {
   id: string;
   label?: string;
   type?: string;
-  className?: string;
   placeholder?: string;
-  form: UseFormReturn<CreateUserFormData>;
+  className?: string;
   children?: ReactNode;
+  form: UseFormReturn<CreateUserFormData>;
 }
 
 export const TextField = ({

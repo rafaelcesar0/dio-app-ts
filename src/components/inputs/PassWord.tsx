@@ -12,8 +12,8 @@ interface IPassWord {
 
 export const PassWord = ({
   id,
-  label = 'Senha',
-  placeholder = 'Minha senha',
+  label = 'Password',
+  placeholder = 'My password',
   form,
 }: IPassWord) => {
   const [showPassword, setShowPassword]: [boolean, Function] = useState(false);

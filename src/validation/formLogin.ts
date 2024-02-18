@@ -23,5 +23,5 @@ export const createUserFormSchema = z.object({
     .refine((email) => {
       return email.endsWith('@gmail.com') || email.endsWith('@hotmail.com');
     }, 'Aceitamos apenas: "gmail" e "hotmail"'),
-  senha: z.string().min(1, 'Campo obrigatório').min(6, 'Mínimo 6 caracteres'),
+  password: z.string().min(1, 'Campo obrigatório').min(6, 'Mínimo 6 caracteres'),
 });
